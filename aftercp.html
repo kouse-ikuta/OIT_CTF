@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="jquery.cookie.js"></script>
+    <title>ctf</title>
+</head>
+<body>
+    <h1 class="題名">結果発表</h1>
+
+    <div class="ctf紹介">
+        <h2>あなたの正答率は</h1>
+        <p id="lastresult"></p>        
+    </div>
+    <a href="index.html">ホームに戻る</a>     
+    
+    <script>
+    window.onload = function(){
+    document.getElementById("lastresult").textContent = "あなたの正解数は"+$.cookie('count')+"です！";
+    }    </script>   
+</body>
+</html>
