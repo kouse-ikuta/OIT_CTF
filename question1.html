@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="jquery.cookie.js"></script>
+    <title>quiz</title>
+</head>
+<body>
+
+    <div class="all">
+    <div class="quiz">
+    <h1 class="題名">第一問</h1>
+
+    <div class="top">
+        <h2>問題文</h2>
+        <p>Aliceはシーザー暗号を使ってとある暗号文を作ってみました。以下の暗号文はなんて書いてあると思いますか？
+            <br>
+            BVGpgs{Jrypbz_gb_BVG_Pneaviny}
+            <br>
+            ※etc{}の形ですべての回答は得ることができます。etcに関しては例といして書いてあるだけで、実際の回答は違うものになる可能性があります。
+            また{}の中にも何らかの文字が入ります。また、回答の際に外部サイトを使用しても構いません。
+        </p>
+        <hr>
+        <button class="btn1" type="button" onclick="hint();"><span>ヒント</span></button>
+        <p id="hinto"></p>
+    </div>
+
+    <div class="問題">
+        <form id="quiz1">
+            <input id="myTextBox"name="answer" type="text" value=""></input>
+          </form>
+          <button class="btn1" type="button" onclick="answerQuiz1();"><span>回答する</span></button>
+    </div>
+        <p id="result"></p>
+        <div class="btn btn06">
+            <a href="question2.html">第2問</a>
+        </div>
+    </div>
+</body>
+</html>
+
+
