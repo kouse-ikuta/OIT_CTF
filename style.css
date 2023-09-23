@@ -55,6 +55,7 @@ img {
   box-shadow: 4px 4px 0 #000;
   margin: 10px auto;
   padding: 10px 10px;
+  cursor: pointer; 
 }
 
 .btn1:hover {
