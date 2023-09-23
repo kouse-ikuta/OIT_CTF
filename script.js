@@ -18,10 +18,12 @@ function answerQuiz1() {
         // 正解の場合
         score++;
         document.getElementById("result").textContent = "正解です！";
+        document.getElementById("btn4-text").textContent="正解です!"
         $.cookie('count',score, { expires: 7, path: '/' });
     } else {
         // 不正解の場合
         document.getElementById("result").textContent = "不正解です。正解は " + correctAnswer + " です。";
+        document.getElementById("btn4-text").textContent="不正解です!"
         $.cookie('count',score, { expires: 7, path: '/' });
     }
     counter++;
@@ -42,13 +44,30 @@ function answerQuiz2() {
     if (textBoxValue.toLowerCase() === correctAnswer.toLowerCase()) {
         // 正解の場合
         document.getElementById("result").textContent = "正解です！";
+        document.getElementById("btn4-text").textContent="正解です!"
         score++;
         $.cookie('count', score, { expires: 7, path: '/' });
     } else {
         // 不正解の場合
         document.getElementById("result").textContent = "不正解です。正解は " + correctAnswer + " です。";
+        document.getElementById("btn4-text").textContent="不正解です!"
     }
     counter++;
     }
 }
 
+document.addEventListener('DOMContentLoaded', () => {
+    const btn4Text = document.getElementById('btn4-text');
+    const btn4 = document.getElementById('btn02');
+  
+    btn4.addEventListener('click', () => {
+      btn4Text.classList.remove('hidden');
+      btn4Text.classList.add('popup-message');
+    });
+  
+    btn4Text.addEventListener('animationend', () => {
+      btn4Text.classList.remove('popup-message');
+      btn4Text.classList.add('hidden');
+    });
+  });
+  
