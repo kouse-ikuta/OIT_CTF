@@ -115,16 +115,14 @@ img {
 /* ポップアップメッセージを画面の上の中央に配置して透明にする */
 #btn4-text {
   height: 72px;
-  padding: 8px 16px;
-  border-radius: 8px;
+  padding: 5% 5%;
   background: rgba(70, 171, 82, 0.5); /* 透明な背景色を指定 */
   font-weight: bold;
+  font-size: 300%;
   text-align: center;
-  line-height: 72px;
   position: fixed;
-  top: 50%; /* 上端を画面の中央に配置 */
-  left: 50%; /* 左端を画面の中央に配置 */
-  transform: translate(-50%, -50%); /* 中央揃え */
+  inset:0;
+  margin  :auto;
 }
 
 
@@ -148,41 +146,5 @@ img {
     opacity: 0;
     pointer-events: none;
   }
-}
-
-.btn-solid {
-  color: #fff;
-  border-top: 4px solid #48ecc4;
-  border-right: 4px solid #0a5f4a;
-  border-bottom: 4px solid #0f745b;
-  border-left: 4px solid #8cf9de;
-  border-radius: 0;
-  background: #11a37f;
-}
-
-.btn-solid:hover {
-  color: #fff;
-  border-top: 4px solid #0f745b;
-  border-right: 4px solid #8cf9de;
-  border-bottom: 4px solid #48ecc4;
-  border-left: 4px solid #0a5f4a;
-}
-
-.btn2-solid {
-  color: #fff;
-  border-top: 4px solid #fbf24d;
-  border-right: 4px solid #f1ec8b;
-  border-bottom: 4px solid #f1ec8b;
-  border-left: 4px solid #fbf24d;
-  border-radius: 0;
-  background: #11a37f;
-}
-
-.btn2-solid:hover {
-  color: #fff;
-  border-top: 4px solid #f1ec8b;
-  border-right: 4px solid #fbf24d;
-  border-bottom: 4px solid #fbf24d;
-  border-left: 4px solid #f1ec8b;
 }
 
