@@ -150,7 +150,7 @@ img {
   }
 }
 
-a.btn-solid {
+btn-solid {
   color: #fff;
   border-top: 4px solid #48ecc4;
   border-right: 4px solid #0a5f4a;
@@ -160,7 +160,7 @@ a.btn-solid {
   background: #11a37f;
 }
 
-a.btn-solid:hover {
+btn-solid:hover {
   color: #fff;
   border-top: 4px solid #0f745b;
   border-right: 4px solid #8cf9de;
