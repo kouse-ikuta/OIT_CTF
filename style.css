@@ -167,3 +167,22 @@ img {
   border-bottom: 4px solid #48ecc4;
   border-left: 4px solid #0a5f4a;
 }
+
+.btn2-solid {
+  color: #fff;
+  border-top: 4px solid #fbf24d;
+  border-right: 4px solid #f1ec8b;
+  border-bottom: 4px solid #f1ec8b;
+  border-left: 4px solid #fbf24d;
+  border-radius: 0;
+  background: #11a37f;
+}
+
+.btn2-solid:hover {
+  color: #fff;
+  border-top: 4px solid #f1ec8b;
+  border-right: 4px solid #fbf24d;
+  border-bottom: 4px solid #fbf24d;
+  border-left: 4px solid #f1ec8b;
+}
+
