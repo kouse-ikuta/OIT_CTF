@@ -4,6 +4,10 @@ counter=0;
 function hint(){
     document.getElementById("hinto").textContent = "シーザー暗号とはアルファベットを何文字かずらすことで暗号化する方式です。また、シーザー暗号には有名な換字の数があります。";
 }
+
+function hint2(){
+    document.getElementById("hinto2").textContent = "最初のカッコまでの部分は前回と同じです。そこから鍵を求めてみてください。";
+}
 function answerQuiz1() {
     // テキストボックスの値を取得
     
@@ -38,7 +42,7 @@ function answerQuiz2() {
     score=$.cookie('count');
     score=Number(score);
     // 予め考えていた正解の値
-    var correctAnswer = "1"; // ここに正解の値を設定
+    var correctAnswer = "oitctf{Gather at Point A}"; // ここに正解の値を設定
     
     // テキストボックスの値と正解の値を比較
     if (textBoxValue.toLowerCase() === correctAnswer.toLowerCase()) {

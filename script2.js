@@ -33,7 +33,7 @@ function answerQuiz2() {
     let score=$.cookie('count');
     score=Number(score);
     // 予め考えていた正解の値
-    var correctAnswer = "1"; // ここに正解の値を設定
+    var correctAnswer = "Gather at Point A"; // ここに正解の値を設定
     
     // テキストボックスの値と正解の値を比較
     if (textBoxValue.toLowerCase() === correctAnswer.toLowerCase()) {
