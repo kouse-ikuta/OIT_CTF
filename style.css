@@ -170,3 +170,70 @@ img {
   border-left: 4px solid #0a5f4a;
 }
 
+.f1,
+a.f1,
+button.f1 {
+  font-size: 1.2em;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+a.f2 {
+  overflow: hidden;
+  padding: 1.5rem 6rem;
+  color: #fff;
+  border-radius: 0;
+  background: #000;
+}
+
+a.f2 span {
+  position: relative;
+}
+
+a.f2:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: translateX(-96%);
+  transform: translateX(-96%);
+  background: #1ca0d8;
+}
+
+a.f2:hover:before {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+}
+
+.f2::after{
+  content: '';
+	position: absolute;
+	top: 43%;
+	right: 20px;
+	transform: rotate(45deg) translateY(-50%);
+	width: 6px;
+	height: 6px;
+  border-width: 2px 2px 0 0;
+	border-style: solid;
+	border-color: #ffffff;
+}
