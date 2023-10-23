@@ -1,11 +1,19 @@
 var score = 0;
 counter=0;
 
-function hint(){
+function hint1(){
     document.getElementById("hinto").textContent = "シーザー暗号とはアルファベットを何文字かずらすことで暗号化する方式です。また、シーザー暗号には有名な換字の数があります。";
 }
 
 function hint2(){
+    document.getElementById("hinto").textContent = "ヒント2";
+}
+
+function hint3(){
+    document.getElementById("hinto").textContent = "ヒント3";
+}
+
+function hint4(){
     document.getElementById("hinto2").textContent = "最初のカッコまでの部分は前回と同じです。そこから鍵を求めてみてください。";
 }
 function answerQuiz1() {

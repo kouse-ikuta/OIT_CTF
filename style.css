@@ -16,6 +16,11 @@ h1 {
   border-width: medium;
 }
 
+.btn-yoko{
+  display: flex;
+  justify-content:flex-start;
+}
+
 p, li {
   font-size: 16px;
   line-height: 2;
@@ -57,7 +62,7 @@ img {
   background: #fff;
   -webkit-box-shadow: 4px 4px 0 #000;
   box-shadow: 4px 4px 0 #000;
-  margin: 10px auto;
+  margin: 10px 5px;
   padding: 10px 10px;
   cursor: pointer; 
 }
