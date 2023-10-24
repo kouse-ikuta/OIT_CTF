@@ -2,20 +2,64 @@ var score = 0;
 counter=0;
 
 function hint1(){
+    document.getElementById("url1").textContent = "";
+    document.getElementById("url2").textContent = "";
     document.getElementById("hinto").textContent = "シーザー暗号とはアルファベットを何文字かずらすことで暗号化する方式です。また、シーザー暗号には有名な換字の数があります。";
+    
 }
 
 function hint2(){
-    document.getElementById("hinto").textContent = "ヒント2";
+    document.getElementById("url1").textContent = "更に詳しく知りたい場合は外部のサイトへ";
+    document.getElementById("url2").textContent = "";
+    document.getElementById("hinto").textContent = "";
+    
 }
 
 function hint3(){
-    document.getElementById("hinto").textContent = "ヒント3";
+    document.getElementById("url1").textContent = "";
+    document.getElementById("url2").textContent = "暗号複合サイト";
+    document.getElementById("hinto").textContent = "";
 }
 
 function hint4(){
+    document.getElementById("url3").textContent = "";
+    document.getElementById("url4").textContent = "";
     document.getElementById("hinto2").textContent = "最初のカッコまでの部分は前回と同じです。そこから鍵を求めてみてください。";
 }
+
+function hint5(){
+    document.getElementById("url3").textContent = "更に詳しく知りたい場合は外部のサイトへ";
+    document.getElementById("url4").textContent = "";
+    document.getElementById("hinto2").textContent = "";
+}
+
+function hint6(){
+    document.getElementById("url3").textContent = "";
+    document.getElementById("url4").textContent = "ヴィジュアル暗号復号サイト";
+    document.getElementById("hinto2").textContent = "";
+}
+
+
+function hint7(){
+    document.getElementById("url5").textContent = "";
+    document.getElementById("url6").textContent = "";
+    document.getElementById("hinto2").textContent = "";
+}
+
+function hint8(){
+    document.getElementById("url5").textContent = "更に詳しく知りたい場合は外部のサイトへ";
+    document.getElementById("url6").textContent = "";
+    document.getElementById("hinto2").textContent = "";
+}
+
+function hint9(){
+    document.getElementById("url5").textContent = "";
+    document.getElementById("url6").textContent = "";
+    document.getElementById("hinto2").textContent = "";
+}
+
+
+
 function answerQuiz1() {
     // テキストボックスの値を取得
     

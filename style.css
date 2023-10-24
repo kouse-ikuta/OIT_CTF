@@ -16,6 +16,11 @@ h1 {
   border-width: medium;
 }
 
+.urll{
+  font-size:15px;
+}
+
+
 .btn-yoko{
   display: flex;
   justify-content:flex-start;
