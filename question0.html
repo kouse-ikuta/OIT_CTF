@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="jquery.cookie.js"></script>
+    <title>第一問</title>
+</head>
+<body>
+ 
+    <div class="all">
+    <div class="quiz">
+    <h1 class="題名">第一問</h1>
+
+    <div class="top">
+        <h2>問題文</h2>
+        <p></p>
+            <br>
+            15 9 20 3 20 6{25 5 12 3 15 13 5}
+            <br>
+            ※etc{}の形ですべての回答は得ることができます。etcに関しては例として書いてあるだけで、実際の回答は違うものになる可能性があります。
+            また{}の中にも何らかの文字が入ります。また、回答の際に外部サイトを使用しても構いません。
+
+        </p>
+        <hr>
+        <div class="btn-yoko">
+        <button class="btn1 btn btn-solid" type="button" onclick="hint0();"><span>ヒント</span></button>
+        </div>
+        <p id="hinto">アルファベットの順番に注目</p>
+    </div>
+
+    <div class="問題">
+        <form id="quiz1">
+            <input id="myTextBox"name="answer" type="text" value=""></input>
+          </form>
+          <button class="btn1 btn btn-solid" id="btn02" type="button" onclick="answerQuiz0();"><span>回答する</span></button>
+          <p id="btn4-text" class="hidden"></p>
+    </div>
+        <p id="result"></p>
+        <a href="ans0.html" class="f1 f2"><span>答えを確認する</span></a>
+    </div>
+    </div>
+</body>
+</html>
