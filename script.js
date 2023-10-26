@@ -98,7 +98,8 @@ function answerQuiz2() {
     var textBoxValue = document.getElementById("myTextBox").value;
     // 予め考えていた正解の値
     var correctAnswer = "oitctf{Gather at Point A}"; // ここに正解の値を設定
-    
+    document.getElementById("result").textContent = "";
+        document.getElementById("btn4-text").textContent=""
     // テキストボックスの値と正解の値を比較
     if (textBoxValue.toLowerCase() === correctAnswer.toLowerCase()) {
         // 正解の場合
