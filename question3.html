@@ -16,24 +16,31 @@
 
     <div class="top">
         <h2>問題文</h2>
-        <p>ある人物にrsa暗号を使用してある文書を送った。そのひとはうっかりしていたようでpとqが同じようになってしまったようだ。</p>
-        <p></p>
+        <p>ある人物にrsa暗号を使用してある文書を送った。そのひとはうっかりしていたようでpとqが同じようになってしまったようだ。内容は以下に記す。
+            また暗号化されている文字列は整数をバイト列を変換しているので復号化したあとにそのバイト列を文字列に戻す必要がある。
+        </p>
+        <div class="breakall">
+            <p >e=65537<br>
+                N=9135046833789459598203413117527022449251262941027030094183435976255403088032083458549867912229864567003904581429178497129339859634373307427433858645991481<br>
+                c=187806972216289544341021521756810567669327134686751091280593216905574515631021270692079557606254556887166164624591042517986158532304089083873059283753141</p>
+        </div>
+        
         <hr>
         <p>※etc{}の形ですべての回答は得ることができます。etcに関しては例として書いてあるだけで、実際の回答は違うものになる可能性があります。
             また{}の中にも何らかの文字が入ります。また、回答の際に外部サイトを使用しても構いません。</p>
         <button class="btn1 btn btn-solid" type="button" onclick="hint7();"><span>ヒント1</span></button>
         <button class="btn1 btn btn-solid" type="button" onclick="hint8();"><span>ヒント2</span></button>
         <button class="btn1 btn btn-solid" type="button" onclick="hint9();"><span>ヒント3</span></button>
-        <p id="hinto"></p>
-        <a href="" target="_blank" id="url5" class="urll"></a>
-        <a href="" target="_blank" id="url6" class="urll"></a>
+        <p id="hinto3"></p>
+        <a href="https://manabitimes.jp/math/1146" target="_blank" id="url5" class="urll"></a>
+        <a href="http://herb.h.kobe-u.ac.jp/RSA.html" target="_blank" id="url6" class="urll"></a>
     </div>
 
     <div class="問題">
         <form id="quiz3">
             <input id="myTextBox"name="answer" type="text" value=""></input>
           </form>
-          <button class="btn1 btn btn-solid" id="btn02" type="button" onclick="answerQuiz2();">回答する</button>
+          <button class="btn1 btn btn-solid" id="btn02" type="button" onclick="answerQuiz3();">回答する</button>
           <p id="btn4-text" class="hidden"></p>
         </div>
         <p id="result"></p>

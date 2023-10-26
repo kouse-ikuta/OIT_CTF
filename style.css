@@ -127,17 +127,39 @@ img {
 }
 
 /* ポップアップメッセージを画面の上の中央に配置して透明にする */
-#btn4-text {
+/*#btn4-text {
   height: 72px;
   padding: 5% 5%;
-  background: rgba(70, 171, 82, 0.5); /* 透明な背景色を指定 */
+  background: rgba(70, 171, 82, 0.5); 
   font-weight: bold;
   font-size: 300%;
   text-align: center;
   position: fixed;
   inset:0;
   margin  :auto;
+}*/
+
+#btn4-text {
+  height: 72px;
+  padding: 5% 5%;
+  background: rgba(70, 171, 82, 0.5);
+  font-weight: bold;
+  font-size: 300%;
+  text-align: center;
+  position: fixed;
+  inset: 0;
+  margin: auto;
 }
+
+/* スマートフォン用のスタイル */
+@media only screen and (max-width: 767px) {
+  #btn4-text {
+      font-size: 150%; /* スマートフォン用のフォントサイズを調整 */
+      padding: 10px; /* スマートフォン用の内側の余白を調整 */
+      background: rgba(70, 171, 82, 0.8); /* スマートフォン用の背景色を調整 */
+  }
+}
+
 
 
 
@@ -246,4 +268,8 @@ a.f2:hover:before {
   border-width: 2px 2px 0 0;
 	border-style: solid;
 	border-color: #ffffff;
+}
+
+.breakall{
+  overflow-wrap: break-word;
 }

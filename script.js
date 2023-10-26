@@ -24,7 +24,7 @@ function hint3(){
 function hint4(){
     document.getElementById("url3").textContent = "";
     document.getElementById("url4").textContent = "";
-    document.getElementById("hinto2").textContent = "最初のカッコまでの部分は前回と同じです。そこから鍵を求めてみてください。";
+    document.getElementById("hinto2").textContent = "カッコの前の文字が前回の文字と同じです。";
 }
 
 function hint5(){
@@ -35,7 +35,7 @@ function hint5(){
 
 function hint6(){
     document.getElementById("url3").textContent = "";
-    document.getElementById("url4").textContent = "ヴィジュアル暗号復号サイト";
+    document.getElementById("url4").textContent = "ヴィジュネル暗号復号サイト";
     document.getElementById("hinto2").textContent = "";
 }
 
@@ -43,18 +43,18 @@ function hint6(){
 function hint7(){
     document.getElementById("url5").textContent = "";
     document.getElementById("url6").textContent = "";
-    document.getElementById("hinto2").textContent = "";
+    document.getElementById("hinto3").innerHTML = "これを参考にしてください。<br>暗号化: c = m^e mod n<br> 復号化: m = c^d mod n  ";
 }
 
 function hint8(){
     document.getElementById("url5").textContent = "更に詳しく知りたい場合は外部のサイトへ";
     document.getElementById("url6").textContent = "";
-    document.getElementById("hinto2").textContent = "";
+    document.getElementById("hinto3").textContent = "";
 }
 
 function hint9(){
     document.getElementById("url5").textContent = "";
-    document.getElementById("url6").textContent = "";
+    document.getElementById("url6").textContent = "RSA暗号複合サイト";
     document.getElementById("hinto2").textContent = "";
 }
 
@@ -111,6 +111,33 @@ function answerQuiz2() {
     counter++;
     }
 }
+
+function answerQuiz3() {
+    // テキストボックスの値を取得
+
+    if(counter==0){
+    var textBoxValue = document.getElementById("myTextBox").value;
+    score=$.cookie('count');
+    score=Number(score);
+    // 予め考えていた正解の値
+    var correctAnswer = "oitctf{rsa_encryption}"; // ここに正解の値を設定
+    
+    // テキストボックスの値と正解の値を比較
+    if (textBoxValue.toLowerCase() === correctAnswer.toLowerCase()) {
+        // 正解の場合
+        document.getElementById("result").textContent = "正解です！";
+        document.getElementById("btn4-text").textContent="正解です!"
+        score++;
+        $.cookie('count', score, { expires: 7, path: '/' });
+    } else {
+        // 不正解の場合
+        document.getElementById("result").textContent = "不正解です。正解は " + correctAnswer + " です。";
+        document.getElementById("btn4-text").textContent="不正解です!"
+    }
+    counter++;
+    }
+}
+
 
 document.addEventListener('DOMContentLoaded', () => {
     const btn4Text = document.getElementById('btn4-text');
