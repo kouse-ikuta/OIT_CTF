@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="jquery.cookie.js"></script>
+    <title>第三問答え</title>
+</head>
+<body>
+ 
+    <div class="all">
+    <div class="quiz">
+    <h1 class="題名">第三問答え</h1>
+
+    <div class="top">
+        <h2>答えはoitctf{rsa_encryption}です</h2>
+        <a href="https://manabitimes.jp/math/1146" target="_blank" id="url5" class="urll">rsa暗号についてこちらで詳しく解説されています。</a>
+        <p id="nowresult"></p>
+        <script>
+            window.onload = function(){
+            document.getElementById("nowresult").textContent = "現在の正解数は"+$.cookie('count')+"です！";
+            }</script>  
+    </div>
+
+    <div class="問題">
+        <a href="question4.html" class="f1 f2"><span>問題4</span></a>
+    </div>
+    </div>
+</body>
+</html>

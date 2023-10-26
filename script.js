@@ -70,18 +70,18 @@ function answerQuiz1() {
     // 予め考えていた正解の値
     var correctAnswer = "OITctf{Welcom_to_OIT_Carnival}"; // ここに正解の値を設定
     document.getElementById("result").textContent = "";
-    document.getElementById("btn4-text").textContent=""
+    document.getElementById("btn4-text").textContent="";
     // テキストボックスの値と正解の値を比較
     if (textBoxValue.toLowerCase() === correctAnswer.toLowerCase()) {
         // 正解の場合
         score++;
         document.getElementById("result").textContent = "正解です！";
-        document.getElementById("btn4-text").textContent="正解です!"
+        document.getElementById("btn4-text").textContent="正解です!";
         $.cookie('count',score, { expires: 7, path: '/' });
     } else {
         // 不正解の場合
-        document.getElementById("result").textContent = "不正解です。正解は " + correctAnswer + " です。";
-        document.getElementById("btn4-text").textContent="不正解です!"
+        document.getElementById("result").textContent = "不正解です。";
+        document.getElementById("btn4-text").textContent="不正解です!";
         $.cookie('count',score, { expires: 7, path: '/' });
     }
     
@@ -99,18 +99,19 @@ function answerQuiz2() {
     // 予め考えていた正解の値
     var correctAnswer = "oitctf{Gather at Point A}"; // ここに正解の値を設定
     document.getElementById("result").textContent = "";
-        document.getElementById("btn4-text").textContent=""
+    document.getElementById("btn4-text").textContent="";
+
     // テキストボックスの値と正解の値を比較
     if (textBoxValue.toLowerCase() === correctAnswer.toLowerCase()) {
         // 正解の場合
         document.getElementById("result").textContent = "正解です！";
-        document.getElementById("btn4-text").textContent="正解です!"
+        document.getElementById("btn4-text").textContent="正解です!";
         score=scorel+1;
         $.cookie('count', score, { expires: 7, path: '/' });
     } else {
         // 不正解の場合
-        document.getElementById("result").textContent = "不正解です。正解は " + correctAnswer + " です。";
-        document.getElementById("btn4-text").textContent="不正解です!"
+        document.getElementById("result").textContent = "不正解です。";
+        document.getElementById("btn4-text").textContent="不正解です!";
         $.cookie('count', scorel, { expires: 7, path: '/' });
     }
   
@@ -118,28 +119,33 @@ function answerQuiz2() {
 
 function answerQuiz3() {
     // テキストボックスの値を取得
-
     if(counter==0){
+        scorel=$.cookie('count');
+        scorel=Number(scorel);
+        counter++;
+    }
+    
     var textBoxValue = document.getElementById("myTextBox").value;
-    score=$.cookie('count');
-    score=Number(score);
+   
     // 予め考えていた正解の値
     var correctAnswer = "oitctf{rsa_encryption}"; // ここに正解の値を設定
-    
+    document.getElementById("result").textContent = "";
+    document.getElementById("btn4-text").textContent="";
+
     // テキストボックスの値と正解の値を比較
     if (textBoxValue.toLowerCase() === correctAnswer.toLowerCase()) {
         // 正解の場合
         document.getElementById("result").textContent = "正解です！";
-        document.getElementById("btn4-text").textContent="正解です!"
+        document.getElementById("btn4-text").textContent="正解です!";
         score++;
         $.cookie('count', score, { expires: 7, path: '/' });
     } else {
         // 不正解の場合
-        document.getElementById("result").textContent = "不正解です。正解は " + correctAnswer + " です。";
-        document.getElementById("btn4-text").textContent="不正解です!"
+        document.getElementById("result").textContent = "不正解です。";
+        document.getElementById("btn4-text").textContent="不正解です!";
+        $.cookie('count', scorel, { expires: 7, path: '/' });
     }
-    counter++;
-    }
+    
 }
 
 

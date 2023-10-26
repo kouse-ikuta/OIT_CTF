@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="jquery.cookie.js"></script>
+    <title>第一問答え</title>
+</head>
+<body>
+ 
+    <div class="all">
+    <div class="quiz">
+    <h1 class="題名">第一問答え</h1>
+
+    <div class="top">
+        <h2>答えはOITctf{Welcom_to_OIT_Carnival}です</h2>
+        <a href="https://staff.persol-xtech.co.jp/corporate/security/article.html?id=80" target="_blank" id="url1" class="urll">シーザ暗号はこちらで詳しく解説しています。</a>
+        <p id="nowresult"></p>
+        <script>
+            window.onload = function(){
+            document.getElementById("nowresult").textContent = "現在の正解数は"+$.cookie('count')+"です！";
+            }    </script>  
+
+    </div>
+
+    <div class="問題">
+        <a href="question2.html" class="f1 f2"><span>問題2</span></a>
+    </div>
+    </div>
+</body>
+</html>
