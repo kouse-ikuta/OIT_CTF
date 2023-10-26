@@ -2,7 +2,7 @@ var score = 0;
 var scorel=0;
 counter=0;
 
-function hin0(){
+function hint0(){
     document.getElementById("url1").textContent = "アルファベットの順番に注目";
 }
 function hint1(){
