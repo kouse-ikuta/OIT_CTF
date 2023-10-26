@@ -111,6 +111,7 @@ function answerQuiz2() {
         // 不正解の場合
         document.getElementById("result").textContent = "不正解です。正解は " + correctAnswer + " です。";
         document.getElementById("btn4-text").textContent="不正解です!"
+        $.cookie('count', scorel, { expires: 7, path: '/' });
     }
   
 }
