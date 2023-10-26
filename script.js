@@ -43,7 +43,7 @@ function hint6(){
 function hint7(){
     document.getElementById("url5").textContent = "";
     document.getElementById("url6").textContent = "";
-    document.getElementById("hinto3").innerHTML = "これを参考にしてください。<br>暗号化: c = m^e mod n<br> 復号化: m = c^d mod n  ";
+    document.getElementById("hinto3").innerHTML = "これを参考にしてください。<br>暗号化: c = m^e mod N<br> 復号化: m = c^d mod N<br>N= p×q";
 }
 
 function hint8(){
