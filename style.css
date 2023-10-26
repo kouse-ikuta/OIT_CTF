@@ -1,3 +1,11 @@
+* {
+	float: none;
+	position: static;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
 html {
   font-size: 10px;
   font-family: 'Open Sans', sans-serif;
@@ -140,7 +148,7 @@ img {
 }*/
 
 #btn4-text {
-  height: 72px;
+  height: 5%;
   padding: 5% 5%;
   background: rgba(70, 171, 82, 0.5);
   font-weight: bold;
@@ -151,14 +159,15 @@ img {
   margin: auto;
 }
 
-/* スマートフォン用のスタイル */
+/* スマートフォン用のスタイル 
 @media only screen and (max-width: 767px) {
   #btn4-text {
-      font-size: 150%; /* スマートフォン用のフォントサイズを調整 */
-      padding: 10px; /* スマートフォン用の内側の余白を調整 */
-      background: rgba(70, 171, 82, 0.8); /* スマートフォン用の背景色を調整 */
+      font-size: 150%; スマートフォン用のフォントサイズを調整
+      padding-right:50%; スマートフォン用の内側の余白を調整
+      background: rgba(70, 171, 82, 0.8); /* スマートフォン用の背景色を調整
   }
 }
+*/
 
 
 
