@@ -170,7 +170,7 @@ function answerQuiz3() {
         // 正解の場合
         document.getElementById("result").textContent = "正解です！";
         document.getElementById("btn4-text").textContent="正解です!";
-        score++;
+        score=scorel+1;
         $.cookie('count', score, { expires: 7, path: '/' });
     } else {
         // 不正解の場合
