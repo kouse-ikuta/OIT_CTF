@@ -161,7 +161,7 @@ function answerQuiz3() {
     var textBoxValue = document.getElementById("myTextBox").value;
    
     // 予め考えていた正解の値
-    var correctAnswer = "oitctf{rsa_encryption}"; // ここに正解の値を設定
+    var correctAnswer = "oitctf{sugoi}"; // ここに正解の値を設定
     document.getElementById("result").textContent = "";
     document.getElementById("btn4-text").textContent="";
 
