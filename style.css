@@ -171,7 +171,6 @@ img {
 
 
 
-
 /* ポップアップアニメーションを3秒かけて実行 */
 .popup-message {
   animation: popup 3s forwards;
