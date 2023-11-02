@@ -69,7 +69,7 @@ function answerQuiz0() {
     var textBoxValue = document.getElementById("myTextBox").value;
   
     // 予め考えていた正解の値
-    var correctAnswer = "oitctf{fukuzawaken_youkoso}"; // ここに正解の値を設定
+    var correctAnswer = "oitctf{welcome}"; // ここに正解の値を設定
     document.getElementById("result").textContent = "";
     document.getElementById("btn4-text").textContent="";
     // テキストボックスの値と正解の値を比較
