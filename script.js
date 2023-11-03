@@ -21,7 +21,7 @@ function hint2(){
 
 function hint3(){
     document.getElementById("url1").textContent = "";
-    document.getElementById("url2").textContent = "暗号複合サイト";
+    document.getElementById("url2").textContent = "暗号復号サイト";
     document.getElementById("hinto").textContent = "";
 }
 
